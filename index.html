@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/jpg" href="app/img/favicon.png" />
+    <title>Fylo Landing Page</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link href="dist/style.css" rel="stylesheet">
+</head>
+
+<body id="body">
+    <div class="warning-banner" id="warning-banner">
+        <p id="warning-banner-p">This website is just a mockup, these services DOESN'T EXIST !!</p>
+        <p onclick="closeWarning()" id="close-button">Close</p>
+    </div>
+    <div class="container">
+        <section class="hero">
+            <nav>
+                <ul>
+                    <li><a href="#hero"><img src="app/img/logo.svg" alt="Illustration" class="logo"></a></li>
+                </ul>
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#">Features</a></li>
+                    <li class="nav-item"><a href="#">Teams</a></li>
+                    <li class="nav-item"><a href="#">Sign In</a></li>
+                </ul>
+            </nav>
+            <div class="hero-img">
+                <img src="app/img/illustration-1.svg" alt="">
+            </div>
+            <div class="hero-content">
+                <h2>All your files in one secure location, accessible anywhere.</h2>
+                <p>Fylo stores your most important files in one secure location. Access them wherever you need, share
+                    and collaborate with friends, family, and co-workers.</p>
+                <form action="">
+                    <input type="email" name="email" id="email" placeholder="Enter your email." class="form-email">
+                    <input type="submit" value="Get Started" class="form-submit" onclick="warning()">
+                </form>
+            </div>
+        </section>
+
+        <section class="feature">
+            <div class="features-img">
+                <img src="app/img/illustration-2.svg" alt="Illustration">
+            </div>
+            <div class="features-content">
+                <h2>Get Started Stay productive, wherever you are.</h2>
+                <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+                    storage needs. </p>
+                <p> Securely share files and folders with friends, family and colleagues for live collaboration. No
+                    email attachments required!</p>
+                <div class="link" onclick="warning()">
+                    <a href="#">See how<br>Fylo works </a>
+                    <img src="app/img/icon-arrow.svg" alt="arrow">
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-item">
+                    <img src="app/img/icon-quotes.svg" alt="" class="quote">
+                    <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our
+                        team has become a well-oiled collaboration machine. </p>
+                    <div class="testimonial-profile">
+                        <div class="profile-img">
+                            <img src="app/img/avatar-testimonial.jpg" alt="">
+                        </div>
+                        <div class="profile-details">
+                            <div class="profile-id">
+                                <p>Kyle Burton</p>
+                            </div>
+                            <div class="profile-designation">
+                                <p>Founder & CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="earlyaccess">
+            <h2>Get early access today</h2>
+            <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+                questions, our support team would be happy to help you.</p>
+            <form action="" class="earlyaccess-form">
+                <input type="email" name="email" id="early-email" placeholder="example@fylo.com" class="form-email">
+                <input type="submit" value="Get Started" class="form-submit" onclick="warning()">
+            </form>
+        </section>
+
+        <section class="footer">
+            <img class="footer-logo" src="app/img/logo-white.svg" alt="">
+            <div>
+                <div class="footer-contact">
+                    <img src="app/img/icon-phone.svg" alt="">
+                    <p>Phone: +1-543-123-4567</p>
+                </div>
+                <div class="footer-contact">
+                    <img src="app/img/icon-email.svg" alt="">
+                    <p>example@fylo.com</p>
+                </div>
+            </div>
+            <ul class="links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Jobs</a> </li>
+                <li><a href="#">Press</a> </li>
+                <li><a href="#">Blog</a> </li>
+            </ul>
+            <ul class="links others">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+            <ul class="links social">
+                <li><a href="#"><img class="social-icons" src="app/img/icon-fb.svg" alt=""></a></li>
+                <li><a href="#"><img class="social-icons" src="app/img/icon-twitter.svg" alt=""></a></li>
+                <li><a href="#"><img class="social-icons" src="app/img/icon-instagram.svg" alt=""></a></li>
+            </ul>
+
+        </section>
+    </div>
+
+    <!-- Watermark -->
+    <p class="watermark"><strong>Created by </strong><a target="_blank" rel="noreferrer"
+            href="https://instagram.com/mr_alwin_">Alwin Sunil</a></p>
+
+    <!-- Loading Wrapper -->
+    <div class="loader-wrapper" id="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script src="app/js/script.js"></script>
+</body>
+
+</html>
