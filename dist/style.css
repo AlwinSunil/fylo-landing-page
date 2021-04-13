@@ -588,6 +588,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 1.5rem;
   }
   .nav-items {
     display: -webkit-box;
